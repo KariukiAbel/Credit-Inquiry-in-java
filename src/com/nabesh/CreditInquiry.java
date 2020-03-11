@@ -54,4 +54,8 @@ public class CreditInquiry {
             return true;
         return false;
     }
+
+    public void processRequests(){
+
+    }
 }

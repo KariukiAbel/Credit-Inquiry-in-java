@@ -8,7 +8,7 @@ public class AccountRecord {
     private  double balance;
 
     //Constructor (called when during building of the class)
-    //no-arguement constructor calls other constructor with default values
+    //no-argument constructor calls other constructor with default values
     public AccountRecord(){
         this(0, "", "",0.0);
     }

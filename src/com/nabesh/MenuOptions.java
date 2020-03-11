@@ -12,7 +12,7 @@ public enum MenuOptions {
         return value;
     }
 
-    public MenuOptions(int valueOption){
+    MenuOptions(int valueOption){
         value = valueOption;
     }
 }
