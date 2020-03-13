@@ -55,6 +55,21 @@ public class CreditInquiry {
         return false;
     }
 
+    private MenuOptions getRequests(){
+        Scanner text = new Scanner(System.in);
+        int request = 1;
+        try{
+            do{
+                System.out.println("\n? ");
+                request = text.nextInt();
+            }while((request < 1) || (request > 4));
+        }catch (NoSuchElementException noSuchElementException){
+            System.err.println("Invalid input");
+            System.exit(1);
+        }
+        return choices [request - 1 ];
+    }
+
     public void processRequests(){
 
     }

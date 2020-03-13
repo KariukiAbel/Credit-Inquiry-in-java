@@ -21,7 +21,8 @@ public class AccountRecord {
         setBalance(bal);
 
     }
-//Setters
+
+    //Setters
     public void setAccount(int acct) {
         this.account = acct;
     }
@@ -37,8 +38,8 @@ public class AccountRecord {
     public void setBalance(double bal) {
         this.balance = bal;
     }
-    //Getters
 
+    //Getters
     public int getAccount() {
         return account;
     }
