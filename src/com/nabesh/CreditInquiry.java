@@ -71,6 +71,21 @@ public class CreditInquiry {
     }
 
     public void processRequests(){
-
+        accountType = getRequests();
+        while (accountType != MenuOptions.EXIT){
+            switch (accountType){
+                case ZERO_BALANCE:
+                    System.out.println("\nAccounts with zero balances.");
+                    break;
+                case DEBIT_BALANCE:
+                    System.out.println("\nAccounts with debit balances.");
+                    break;
+                case CREDIT_BALANCE:
+                    System.out.println("\nAccounts with credit balances.");
+                    break;
+            }
+            readRecords();
+            accountType = getRequests();
+        }
     }
 }
